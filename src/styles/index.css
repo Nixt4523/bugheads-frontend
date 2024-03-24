@@ -7,3 +7,21 @@
 body::-webkit-scrollbar {
 	display: none;
 }
+
+.hide-scrollbar::-webkit-scrollbar {
+	background-color: transparent;
+	width: 0.4rem;
+	height: 0.1rem;
+}
+
+.hide-scrollbar::-webkit-scrollbar-thumb {
+	background-color: rgba(230, 229, 229, 1);
+	border-radius: 25px;
+}
+
+.my-config {
+	--darkmode: 0;
+	--h-accent: 0;
+	--s-accent: 0%;
+	--l-accent: 0%;
+}

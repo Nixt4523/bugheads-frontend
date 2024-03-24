@@ -1,29 +1,21 @@
 import { Link } from 'react-router-dom';
 
-const RegisterForm = () => {
+const LoginForm = () => {
 	return (
 		<section className="container font-poppins h-full flex items-center justify-center">
 			<main className="flex flex-col items-center gap-4 w-1/3">
 				<Link to={'/'} className="flex flex-col items-center gap-6 my-4">
-					<img src="/BugheadsLogo.svg" alt="Bugheads" className='scale-150' />
+					<img src="/BugheadsLogo.svg" alt="Bugheads" className="scale-150" />
 					<h1 className="text-4xl text-neutral font-semibold">Bugheads.</h1>
 				</Link>
-				<div className="flex items-center w-full justify-between gap-2">
-					<label className="input input-bordered focus-within:input-primary rounded-full flex items-center gap-2 flex-1">
-						<input type="text" className="grow" placeholder="First Name" />
-					</label>
-					<label className="input input-bordered focus-within:input-primary rounded-full flex items-center gap-2 flex-1">
-						<input type="text" className="grow" placeholder="Last Name" />
-					</label>
-				</div>
-				<label className="input input-bordered focus-within:input-primary rounded-full flex items-center gap-2 w-full">
+				<label className="input input-bordered focus-within:outline-transparent rounded-full flex items-center gap-2 w-full">
 					<svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
 						<path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
 						<path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
 					</svg>
 					<input type="text" className="grow" placeholder="Email" />
 				</label>
-				<label className="input input-bordered focus-within:input-primary rounded-full flex items-center gap-2 w-full">
+				<label className="input input-bordered focus-within:outline-transparent rounded-full flex items-center gap-2 w-full">
 					<svg viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
 						<path
 							fillRule="evenodd"
@@ -46,23 +38,18 @@ const RegisterForm = () => {
 						/>
 					</svg>
 				</label>
-				<label className="w-full label cursor-pointer">
-					<span className="label-text">Accept Terms & Conditions</span>
-					<input
-						type="checkbox"
-						defaultChecked
-						className="checkbox checkbox-sm rounded-lg"
-					/>
-				</label>
-				<button className="btn btn-block rounded-full btn-primary">
-					Sign Up
-				</button>
 				<Link to={'/login'} className="link self-start link-primary text-sm">
-					Already have an account? Login!
+					Forgot Password?
+				</Link>
+				<button className="btn btn-block rounded-full btn-primary">
+					Sign In
+				</button>
+				<Link to={'/register'} className="link self-start link-primary text-sm">
+					New to Bugheads? Register!
 				</Link>
 			</main>
 		</section>
 	);
 };
 
-export default RegisterForm;
+export default LoginForm;

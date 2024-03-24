@@ -1,5 +1,11 @@
+import WriteBlogForm from '../components/Forms/WriteBlogForm';
+
 const WritePage = () => {
-	return <div>WritePage</div>;
+	return (
+		<section className="w-full min-h-screen h-auto flex justify-center">
+			<WriteBlogForm />
+		</section>
+	);
 };
 
 export default WritePage;

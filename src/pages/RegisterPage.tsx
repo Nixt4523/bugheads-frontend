@@ -1,8 +1,8 @@
-import RegisterForm from '../components/RegisterForm';
+import RegisterForm from '../components/Forms/RegisterForm';
 
 const RegisterPage = () => {
 	return (
-		<main className="min-h-[90dvh] flex items-center justify-center">
+		<main className="w-screen h-screen flex items-center justify-center">
 			<RegisterForm />
 		</main>
 	);

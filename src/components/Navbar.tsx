@@ -9,7 +9,7 @@ const Navbar = () => {
 					<h1 className="text-2xl text-neutral font-semibold">Bugheads.</h1>
 				</Link>
 			</div>
-			<label className="input input-bordered focus-within:input-primary flex items-center gap-2 flex-1 rounded-full">
+			<label className="input input-bordered  focus-within:outline-transparent flex items-center gap-2 flex-1 rounded-full">
 				<svg
 					fill="none"
 					viewBox="0 0 24 24"
@@ -44,24 +44,6 @@ const Navbar = () => {
 						</svg>
 					</button>
 				</Link>
-				{/* <Link to={'/bookmarked'}>
-					<button className="btn rounded-full">
-						Bookmarked
-						<svg
-							fill="none"
-							viewBox="0 0 24 24"
-							strokeWidth={1.5}
-							stroke="currentColor"
-							className="w-5 h-5"
-						>
-							<path
-								strokeLinecap="round"
-								strokeLinejoin="round"
-								d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z"
-							/>
-						</svg>
-					</button>
-				</Link> */}
 				<Link to={'/profile'}>
 					<div className="avatar">
 						<div className="w-12 rounded-full">
