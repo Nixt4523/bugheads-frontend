@@ -44,7 +44,7 @@ const Navbar = () => {
 						</svg>
 					</button>
 				</Link>
-				<Link to={'/profile'}>
+				<Link to={'/my-profile'}>
 					<div className="avatar">
 						<div className="w-12 rounded-full">
 							<img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />

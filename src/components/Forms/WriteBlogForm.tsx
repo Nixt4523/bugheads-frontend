@@ -31,7 +31,7 @@ const WriteBlogForm = () => {
 			</div>
 			<input
 				type="text"
-				className="input input-lg text-4xl font-medium input-ghost w-full focus:outline-none focus:ring-0 focus:border-transparent"
+				className="input input-lg text-4xl font-medium input-ghost w-full focus:outline-none focus:ring-0 focus:border-transparent placeholder:text-black"
 				placeholder="Title"
 			/>
 			<div className="w-full min-h-[100vh] overflow-y-scroll hide-scrollbar rounded-xl p-4">
