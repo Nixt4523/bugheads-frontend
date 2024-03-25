@@ -35,7 +35,7 @@ const WriteBlogForm = () => {
 				placeholder="Title"
 			/>
 			<div className="w-full min-h-[100vh] overflow-y-scroll hide-scrollbar rounded-xl p-4">
-				<TipTap />
+				<TipTap content="Tell your story..!" editable={true} />
 			</div>
 			<button type="button" className="btn btn-block btn-primary rounded-full">
 				Publish

@@ -3,7 +3,12 @@ import { BubbleMenu, EditorContent, useEditor } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Toolbar from './Toolbar';
 
-const TipTap = () => {
+type Props = {
+	content: string;
+	editable: boolean;
+};
+
+const TipTap = ({ content, editable }: Props) => {
 	const editor = useEditor({
 		extensions: [
 			StarterKit.configure({
@@ -59,7 +64,7 @@ const TipTap = () => {
 				},
 			}),
 		],
-		content: 'Tell your story..!',
+		content: content,
 		editorProps: {
 			attributes: {
 				class:
@@ -67,12 +72,16 @@ const TipTap = () => {
 			},
 		},
 		onUpdate({ editor }) {
-			console.log(editor);
+			console.log(editor.getHTML());
 		},
 	});
 
 	if (!editor) {
 		return null;
+	}
+
+	if (!editable) {
+		editor.setEditable(false);
 	}
 
 	return (

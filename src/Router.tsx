@@ -1,4 +1,5 @@
 import { createBrowserRouter } from 'react-router-dom';
+import Blog from './components/Blogs/Blog';
 import Layout from './Layout';
 import HomePage from './pages/HomePage';
 import LoginPage from './pages/LoginPage';
@@ -20,8 +21,12 @@ const router = createBrowserRouter([
 				element: <WritePage />,
 			},
 			{
-				path: '/profile/:userId',
+				path: '/:userEmail',
 				element: <ProfilePage />,
+			},
+			{
+				path: '/:userEmail/:blog',
+				element: <Blog />,
 			},
 			{
 				path: '/my-profile',
